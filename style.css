@@ -1,0 +1,36 @@
+:root {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+body {
+  padding-inline: 2rem;
+}
+
+body * {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+.navbar a:first-child {
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+@media (max-width: 414px) {
+  /* mobile */
+}
