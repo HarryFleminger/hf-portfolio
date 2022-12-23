@@ -11,7 +11,6 @@ body {
 
 body * {
   color: black;
-  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -38,6 +37,8 @@ h1 {
 h2 {
   font-weight: 300;
 }
+
+/* navbar selectors */
 .navbar {
 display: flex;
 align-items: center;
@@ -46,6 +47,52 @@ height: 100px;
 }
 .navbar a:first-child {
   font-size: 1.5rem;
+}
+.navbar-mobile {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -15rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+  transition-timing-function: ease-in;
+  gap: 25px;
+  position: absolute;
+}
+.mobile-cover {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,0);
+  pointer-events: none;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+}
+.show-background {
+  background: rgba(0,0,0,0.5);
+  pointer-events: all;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+}
+.navbar-mobile > a:first-of-type {
+  margin-top: 85px;
+}
+.navbar-mobile > i:first-of-type {
+  position: relative;
+  top: 50px;
+  left: 78px;
+}
+.show {
+  right: 0;
+  transition: 0.2s;
+  width: 15rem;
 }
 
 .header {
@@ -60,7 +107,7 @@ height: 100px;
   display: none;
 }
 @media (max-width: 650px) {
-  /* mobile */
+  /* mobile/tab */
   .d-none-small {
     display: none;
   }
