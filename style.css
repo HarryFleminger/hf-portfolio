@@ -4,7 +4,7 @@
 }
 
 body {
-  padding-inline: 2rem;
+  padding-inline: 5rem;
   padding-block: 0;
   margin: 0;
 }
@@ -56,6 +56,19 @@ height: 100px;
   align-items: center;
   gap: 2rem;
 }
-@media (max-width: 414px) {
+.d-none-mobile {
+  display: none;
+}
+@media (max-width: 650px) {
   /* mobile */
+  .d-none-small {
+    display: none;
+  }
+  .d-mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .body-small {
+    padding-inline: 2rem;
+  }
 }
