@@ -5,6 +5,8 @@
 
 body {
   padding-inline: 2rem;
+  padding-block: 0;
+  margin: 0;
 }
 
 body * {
@@ -18,18 +20,41 @@ a {
   text-decoration: none;
 }
 
+#main-photo {
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+  object-position: 0 24%;
+}
+
 h1, h2 {
   font-family: 'Lato', sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-weight: 300;
+}
 .navbar {
 display: flex;
 align-items: center;
 gap: 40px;
+height: 100px;
 }
 .navbar a:first-child {
-  text-decoration: underline;
   font-size: 1.5rem;
+}
+
+.header {
+  margin-block: 4.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 @media (max-width: 414px) {
   /* mobile */
