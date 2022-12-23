@@ -1,3 +1,4 @@
+/* general selectors */
 :root {
   font-family: 'Merriweather', serif;
   font-size: 16px;
@@ -19,24 +20,6 @@ a {
   text-decoration: none;
 }
 
-#main-photo {
-  border-radius: 50%;
-  height: 240px;
-  width: 240px;
-  object-fit: cover;
-  object-position: 0 24%;
-}
-
-h1, h2 {
-  font-family: 'Lato', sans-serif;
-}
-
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-weight: 300;
-}
 
 /* navbar selectors */
 .navbar {
@@ -48,6 +31,8 @@ height: 100px;
 .navbar a:first-child {
   font-size: 1.5rem;
 }
+
+/* mobile navbar */
 .navbar-mobile {
   z-index: 4;
   position: fixed;
@@ -75,7 +60,8 @@ height: 100px;
   transition: 0.2s;
   transition-timing-function: ease-out;
 }
-.show-background {
+.show-mobile-cover {
+  /* to add with JavaScript */
   background: rgba(0,0,0,0.5);
   pointer-events: all;
   transition: 0.2s;
@@ -89,10 +75,33 @@ height: 100px;
   top: 50px;
   left: 78px;
 }
-.show {
+.show-navbar-mobile {
+  /* to add with JavaScript */
   right: 0;
   transition: 0.2s;
   width: 15rem;
+}
+
+/* header selectors */
+
+#main-photo {
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+  object-position: 0 24%;
+}
+
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 300;
 }
 
 .header {
@@ -103,9 +112,11 @@ height: 100px;
   align-items: center;
   gap: 2rem;
 }
+
 .d-none-mobile {
   display: none;
 }
+
 @media (max-width: 650px) {
   /* mobile/tab */
   .d-none-small {
