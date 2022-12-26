@@ -7,6 +7,12 @@ menuBar.addEventListener("click", (event) => {
   mobileNav.classList.add('show-navbar-mobile')
   mobileCover.classList.add('show-mobile-cover')
 });
+menuBar.addEventListener("mouseover", (event) => {
+  menuBar.classList.add('fa-beat')
+});
+menuBar.addEventListener("mouseout", (event) => {
+  menuBar.classList.remove('fa-beat')
+});
 menuX.addEventListener("click", (event) => {
   mobileNav.classList.remove('show-navbar-mobile')
   mobileCover.classList.remove('show-mobile-cover')

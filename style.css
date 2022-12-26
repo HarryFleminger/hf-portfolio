@@ -39,6 +39,7 @@ height: 100px;
   top: 0;
   bottom: 0;
   right: -15rem;
+  width: 15rem;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -79,7 +80,6 @@ height: 100px;
   /* to add with JavaScript */
   right: 0;
   transition: 0.2s;
-  width: 15rem;
 }
 
 /* header selectors */
@@ -97,7 +97,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
