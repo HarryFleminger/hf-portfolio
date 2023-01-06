@@ -11,13 +11,13 @@ body {
 }
 
 body * {
-  color: black;
   margin: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 
@@ -98,17 +98,23 @@ height: 100px;
   object-position: 0 24%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Lato', sans-serif;
+  color: #342C33;
 }
 
 h1 {
   font-size: 4rem;
   margin-top: -10px;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-weight: 300;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
 }
 h6 {
   font-size: 1.3rem;
@@ -119,16 +125,39 @@ h6 {
   display: flex;
   align-items: center;
   gap: 2rem;
+  color: #342C33;
 }
 .info-cell {
   display: flex;
   align-items: center;
   gap: 12px;
+  color: #342C33;
+}
+#git-linked {
+  margin-top: 2.7rem;
+  font-size: 1.5rem;
 }
 .d-none-mobile {
   display: none;
 }
 
+/* projects */
+.project-card-container {
+  margin-bottom: 2.5rem;
+}
+
+.cards {
+    height: 15rem;
+    border-radius: 0.6rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+}
 @media (max-width: 650px) {
   /* tablet */
   .d-none-small {
@@ -141,6 +170,9 @@ h6 {
   .body-small {
     padding-inline: 2rem;
   }
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 490px) {
@@ -151,5 +183,8 @@ h6 {
   }
   h1 {
     font-size: 3rem;
+  }
+  #git-linked {
+    flex-direction: row;
   }
 }
