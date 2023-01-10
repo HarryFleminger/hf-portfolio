@@ -185,7 +185,7 @@ h6 {
 }
 .modal-content {
   width: 800px;
-  height: 625px;
+  height: 620px;
   background-color: white;
   margin-inline: 5rem;
   border-radius: 0.6rem;
@@ -206,9 +206,10 @@ h6 {
 .pop-bottom > p:first-of-type {
   margin-bottom: 1.4rem;
 }
-.pop-bottom > p:last-of-type {
+.pop-bottom > h4:last-of-type {
   margin-top: 1.4rem;
   text-align: end;
+  font-size: 1.1rem;
 }
 .pop-bottom > a:first-of-type {
   margin-block: 2rem;
@@ -219,7 +220,12 @@ h6 {
   padding: 6px 10px;
   border-radius: 0.3rem;
 }
-
+.hover-color:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(89deg, #29db38, #7781f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* carousel */
 #carousel {
   position: relative;
