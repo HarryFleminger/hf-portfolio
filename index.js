@@ -1,9 +1,17 @@
-// menu managment
+// menu managment variables
 const menuBar = document.querySelector('.fa-solid.fa-bars.fa-xl')
 const menuX = document.querySelector('.fa-solid.fa-xmark.fa-2xl')
 const mobileNav = document.querySelector('.navbar-mobile')
 const mobileCover = document.querySelector('.mobile-cover')
+// Project popups variables
+const travelPlan = document.querySelector('#travel-plan')
+const travelPlanContent = document.querySelector('#travel-plan-content')
+const popUpClose = document.querySelector('.close-pop')
+// Carousel variables
+var slides = document.querySelectorAll('.slide');
+var currentSlide = 0;
 
+// menu managment JS
 menuBar.addEventListener("click", (event) => {
   mobileNav.classList.add('show-navbar-mobile')
   mobileCover.classList.add('show-mobile-cover')
@@ -21,11 +29,21 @@ menuX.addEventListener("click", (event) => {
 mobileCover.addEventListener("click", (event) => {
   mobileNav.classList.remove('show-navbar-mobile')
   mobileCover.classList.remove('show-mobile-cover')
+  travelPlanContent.classList.remove('modal-content-show')
+});
+popUpClose.addEventListener("click", (event) => {
+  mobileNav.classList.remove('show-navbar-mobile')
+  mobileCover.classList.remove('show-mobile-cover')
+  travelPlanContent.classList.remove('modal-content-show')
 });
 
-// Carousel
-var slides = document.querySelectorAll('.slide');
-var currentSlide = 0;
+// Project popups JS
+travelPlan.addEventListener("click", (event) => {
+  travelPlanContent.classList.add('modal-content-show')
+  mobileCover.classList.add('show-mobile-cover')
+});
+
+// Carousel JS
 setInterval(nextSlide, 5000);
 
 nextSlide()
