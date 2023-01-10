@@ -185,12 +185,12 @@ h6 {
 }
 .modal-content {
   width: 800px;
-  height: 650px;
-  background-color: black;
+  height: 625px;
+  background-color: white;
   margin-inline: 5rem;
   border-radius: 0.6rem;
 }
-.pop-top img {
+.slide img {
   width: 100%;
   height: 450px;
   border-radius: 0.6rem 0.6rem 0 0;
@@ -200,6 +200,81 @@ h6 {
   padding-inline: 1rem;
   padding-block: 1rem;
 }
+.pop-bottom h4 {
+  margin-bottom: 1rem;
+}
+.pop-bottom > p:first-of-type {
+  margin-bottom: 1.4rem;
+}
+.pop-bottom > p:last-of-type {
+  margin-top: 1.4rem;
+  text-align: end;
+}
+.pop-bottom > a:first-of-type {
+  margin-block: 2rem;
+}
+
+.primary-button {
+  border: 1px solid #000000;
+  padding: 6px 10px;
+  border-radius: 0.3rem;
+}
+
+/* carousel */
+#carousel {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+#carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 650px) {
   /* tablet */
   .d-none-small {
