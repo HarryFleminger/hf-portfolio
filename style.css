@@ -238,14 +238,27 @@ h6 {
     -webkit-text-fill-color: transparent;
 }
 /* carousel */
-#carousel {
+#carousel1 {
   position: relative;
   width: 100%;
   height: 450px;
   overflow: hidden;
 }
 
-#carousel img {
+#carousel1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+#carousel2 {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+#carousel2 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
