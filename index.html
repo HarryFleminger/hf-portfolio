@@ -15,15 +15,15 @@
   <body class="body-small">
     <div class="navbar d-none-small">
       <a href="#"><strong>Harry Fleminger</strong></a>
-      <a href="#">About</a>
       <a href="#">Projects</a>
+      <a href="#about">About</a>
       <a href="#">Contact</a>
     </div>
     <div class="navbar-mobile">
       <i class="fa-solid fa-xmark fa-2xl"></i>
       <a href="#"><strong>Harry Fleminger</strong></a>
-      <a href="#">About</a>
       <a href="#">Projects</a>
+      <a href="#about">About</a>
       <a href="#">Contact</a>
     </div>
     <div class="mobile-cover"></div>
@@ -52,22 +52,63 @@
             <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
         </div>
       </header>
-
       <section class="project-card-container">
         <h3>Projects</h3>
         <div class="cards">
           <div id="travel-plan">
             <div class="top-section">
               <img src="img/TravelPlan1.PNG" alt="A picture of Harry Fleminger" class="project-image">
+              <div class="rollover-content">
+                <div class="card-buttons">
+                  <button class="button-container">CSS</button>
+                  <button class="button-container">Devise</button>
+                  <button class="button-container">HTML5</button>
+                  <button class="button-container">JavaScript</button>
+                  <button class="button-container">Mapbox</button>
+                  <button class="button-container">Ruby</button>
+                  <button class="button-container">Ruby on Rails 7.0</button>
+                </div>
+              </div>
             </div>
             <p>Travel Plan</p>
           </div>
           <div id="eat-my-way">
             <div class="top-section">
-              <img src="img/TravelPlan6.PNG" alt="A picture of Harry Fleminger" class="project-image">
+              <img src="img/EatMyWayCover.png" alt="A picture of Harry Fleminger" class="project-image">
+              <div class="rollover-content">
+                <div class="card-buttons">
+                  <button class="button-container">Adobe XD</button>
+                  <button class="button-container">Figma</button>
+                  <button class="button-container">UX Design</button>
+                  <button class="button-container">Prototyping</button>
+                  <button class="button-container">Creative Problem Solving</button>
+                  <button class="button-container">Service Design</button>
+                </div>
+              </div>
             </div>
             <p>EatMyWay</p>
           </div>
+        </div>
+        <div class="about-container">
+          <h3 id="about">About</h3>
+        </div>
+        <div class="info-container">
+          <h6>Bio</h6>
+          <p>Hi, I'm Harry.
+            At the beginning of the year I completed my degree in IT and Design from The Open University. I focused on UX/UI design in my final year
+            Most recently, I graduated from Le Wagon, a world renound coding bootcamp. There i studied how to create fully featured websites using Ruby on Rails industry standard practices.
+            I am currently looking for work as a entry level Front-end web developer.</p>
+          <h6>Education</h6>
+          <p><strong>Web Development Bootcamp:</strong> Le Wagon
+            Graduated <em>December 9, 2022</em></p>
+          <p><strong>Bachelors degree in IT & Design:</strong> The Open University <em>January 1, 2022</em></p>
+        </div>
+        <div class="contact-container">
+          <h3>Contact</h3>
+          <h6>Email</h6>
+          <p><strong>Harry.fleminger@hotmail.com</strong></p>
+          <h6>Mobile</h6>
+          <p><strong>07 545 522 119</strong></p>
         </div>
       </section>
       <div class="modal-container">
@@ -106,7 +147,6 @@
               <a class="primary-button hover-color" target="_blank" rel="noopener" href="http://travelplan.herokuapp.com/"><strong>View Website</strong></a>
               <a target="_blank"><h4 class="hover-color close-pop"><strong>Close</strong></h4></a>
             </div>
-
           </div>
         </div>
       </div>
@@ -115,25 +155,22 @@
           <div class="pop-top">
             <div id="carousel2">
               <div class="slide">
-                <img src="img/EayMyWay.JPG" alt="Image 1">
+                <img src="img/EatMyWayPoster1.png" alt="Image 1">
               </div>
               <div class="slide">
-                <img src="img/TravelPlan1.PNG" alt="Image 2">
+                <img src="img/EatMyWayPoster2.png" alt="Image 2">
               </div>
               <div class="slide">
-                <img src="img/TravelPlan2.PNG" alt="Image 3">
+                <img src="img/EatMyWayPoster3.png" alt="Image 3">
               </div>
               <div class="slide">
-                <img src="img/TravelPlan3.PNG" alt="Image 4">
+                <img src="img/EatMyWay1.png" alt="Image 4">
               </div>
               <div class="slide">
-                <img src="img/TravelPlan4.PNG" alt="Image 5">
+                <img src="img/EatMyWay2.png" alt="Image 5">
               </div>
               <div class="slide">
-                <img src="img/TravelPlan5.PNG" alt="Image 6">
-              </div>
-              <div class="slide">
-                <img src="img/TravelPlan6.PNG" alt="Image 7">
+                <img src="img/EatMyWay3.png" alt="Image 6">
               </div>
               <a class="prev" onclick="carousel2.prevSlide()">&#10094;</a>
               <a class="next" onclick="carousel2.nextSlide()">&#10095;</a>
@@ -146,7 +183,6 @@
               <a class="primary-button hover-color" target="_blank" rel="noopener" href="http://travelplan.herokuapp.com/"><strong>View Website</strong></a>
               <a target="_blank"><h4 class="hover-color close-pop"><strong>Close</strong></h4></a>
             </div>
-
           </div>
         </div>
       </div>
