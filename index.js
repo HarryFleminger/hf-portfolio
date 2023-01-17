@@ -33,6 +33,10 @@ mobileCover.addEventListener("click", (event) => {
   mobileCover.classList.remove('show-mobile-cover')
   travelPlanContent.classList.remove('modal-content-show')
   eatMyWayContent.classList.remove('modal-content-show')
+  carousel1.goToSlide(1);
+  carousel1.stopSlideTransition()
+  carousel2.goToSlide(0);
+  carousel1.stopSlideTransition()
 });
 popUpClose.addEventListener("click", (event) => {
   mobileNav.classList.remove('show-navbar-mobile')
@@ -41,15 +45,7 @@ popUpClose.addEventListener("click", (event) => {
   eatMyWayContent.classList.remove('modal-content-show')
 });
 
-// Project popups JS
-travelPlan.addEventListener("click", (event) => {
-  travelPlanContent.classList.add('modal-content-show')
-  mobileCover.classList.add('show-mobile-cover')
-});
-eatMyWay.addEventListener("click", (event) => {
-  eatMyWayContent.classList.add('modal-content-show')
-  mobileCover.classList.add('show-mobile-cover')
-});
+
 
 // Carousel JS
 // setInterval(nextSlide, 5000);
@@ -74,15 +70,26 @@ class Carousel {
   constructor(element) {
     this.slides = element.querySelectorAll('.slide');
     this.currentSlide = 0;
-    setInterval(this.nextSlide.bind(this), 5000);
-    this.nextSlide();
+    this.intervalId = setInterval(this.nextSlide.bind(this), 5000);
+    this.goToSlide(1);
   }
 
   nextSlide() {
+    clearInterval(this.intervalId);
+    this.intervalId = setInterval(this.nextSlide.bind(this), 5000);
     this.goToSlide(this.currentSlide+1);
   }
 
+  stopSlideTransition() {
+    clearInterval(this.intervalId);
+  }
+
+  clearTheInterval() {
+    clearInterval(this.intervalId);
+  }
   prevSlide() {
+    clearInterval(this.intervalId);
+    this.intervalId = setInterval(this.nextSlide.bind(this), 5000);
     this.goToSlide(this.currentSlide-1);
   }
 
@@ -95,3 +102,14 @@ class Carousel {
 
 const carousel1 = new Carousel(document.getElementById('carousel1'));
 const carousel2 = new Carousel(document.getElementById('carousel2'));
+// Project popups JS
+travelPlan.addEventListener("click", (event) => {
+  carousel1.clearTheInterval()
+  travelPlanContent.classList.add('modal-content-show')
+  mobileCover.classList.add('show-mobile-cover')
+});
+eatMyWay.addEventListener("click", (event) => {
+  carousel2.clearTheInterval()
+  eatMyWayContent.classList.add('modal-content-show')
+  mobileCover.classList.add('show-mobile-cover')
+});

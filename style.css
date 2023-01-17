@@ -103,6 +103,10 @@ h1, h2, h3 {
   color: #342C33;
 }
 
+.fa-brands {
+  font-size: 55px;
+}
+
 h1 {
   font-size: 4rem;
   margin-top: -10px;
