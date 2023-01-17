@@ -399,6 +399,26 @@ border-radius: 0.6rem;
 .contact-container p {
     line-height: 1.5rem;
 }
+@media (min-width: 2300px) {
+  .body-small {
+    padding-inline: 45rem;
+  }
+}
+@media (max-width: 2300px) {
+  .body-small {
+    padding-inline: 15rem;
+  }
+}
+@media (max-width: 1600px) {
+  .body-small {
+    padding-inline: 8rem;
+  }
+}
+@media (max-width: 1000px) {
+  .body-small {
+    padding-inline: 4rem;
+  }
+}
 @media (max-width: 650px) {
   /* tablet */
   .d-none-small {
