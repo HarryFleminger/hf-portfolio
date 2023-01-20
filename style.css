@@ -173,6 +173,7 @@ h6 {
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
 }
 
 .cards div img{
@@ -325,12 +326,13 @@ border-radius: 0.6rem;
   width: 100%;
   height: 450px;
   overflow: hidden;
+  object-fit: scale-down;
 }
 
 .slide {
   position: absolute;
   top: 0;
-  width: 100.2%;
+  width: 100%;
   height: 100%;
   opacity: 0;
   transition: opacity 1s;
@@ -419,6 +421,17 @@ border-radius: 0.6rem;
     padding-inline: 4rem;
   }
 }
+@media (max-width: 750px) {
+  .carousels {
+    height: 321px;
+  }
+  .carousels img {
+    height: 322px;
+  }
+  .modal-content {
+    height: 500px;
+  }
+}
 @media (max-width: 650px) {
   /* tablet */
   .d-none-small {
@@ -442,10 +455,13 @@ border-radius: 0.6rem;
   /* .pop-top {
     height: 170px;
   } */
-  #carousel1 {
+  .carousels {
     height: 300px;
   }
-  #carousel2 {
+  .carousels {
+    height: 300px;
+  }
+  .carousels img {
     height: 300px;
   }
 }
@@ -469,11 +485,11 @@ border-radius: 0.6rem;
   .pop-top {
     height: 205px;
   }
-  #carousel1 {
-    height: 100%;
+  .carousels img {
+    height: 226px;
   }
-  #carousel2 {
-    height: 100%;
+  .carousels {
+    height: 226px;
   }
 }
 
@@ -484,5 +500,11 @@ border-radius: 0.6rem;
   }
   .pop-top {
     height: 175px;
+  }
+  .carousels img {
+    height: 170px;
+  }
+  .carousels {
+    height: 170px;
   }
 }
