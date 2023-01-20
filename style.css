@@ -299,6 +299,11 @@ border-radius: 0.6rem;
 }
 .pop-buttons {
   display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+.pop-buttons-website {
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
 }

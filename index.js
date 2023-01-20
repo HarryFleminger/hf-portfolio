@@ -55,6 +55,8 @@ for (let i = 0; i < popUpClose.length; i++) {
     mobileCover.classList.remove('show-mobile-cover')
     travelPlanContent.classList.remove('modal-content-show')
     eatMyWayContent.classList.remove('modal-content-show')
+    gibsonsBakeryContent.classList.remove('modal-content-show')
+    sellebrityContent.classList.remove('modal-content-show')
   });
 }
 
