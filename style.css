@@ -439,6 +439,9 @@ border-radius: 0.6rem;
   .carousels img {
     height: 342px;
   }
+  #gibsons-bakery-content {
+    height: 505px;
+  }
 }
 @media (max-width: 750px) {
   .carousels {
@@ -454,6 +457,9 @@ border-radius: 0.6rem;
   }
   .pop-top {
     height: 266px;
+  }
+  #gibsons-bakery-content {
+    height: 435px;
   }
 }
 @media (max-width: 650px) {
@@ -488,6 +494,9 @@ border-radius: 0.6rem;
   }
   #eat-my-way-content {
     height: 384px;
+  }
+  #gibsons-bakery-content {
+    height: 399px;
   }
 }
 
