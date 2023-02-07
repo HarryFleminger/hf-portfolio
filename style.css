@@ -386,7 +386,8 @@ border-radius: 0.6rem;
 }
 
 .info-container p {
-  line-height: 1.5rem;
+  line-height: 1.55rem;
+  margin-bottom: 1rem;
 }
 
 /* Contact */
@@ -418,6 +419,11 @@ border-radius: 0.6rem;
 @media (max-width: 1600px) {
   .body-small {
     padding-inline: 8rem;
+  }
+}
+@media (min-width: 1000px) {
+  .pop-bottom > h4:first-of-type {
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 1000px) {
