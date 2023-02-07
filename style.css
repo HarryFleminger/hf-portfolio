@@ -486,6 +486,9 @@ border-radius: 0.6rem;
   .carousels img {
     height: 232px;
   }
+  #eat-my-way-content {
+    height: 384px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -514,6 +517,12 @@ border-radius: 0.6rem;
   .carousels {
     height: 186px;
   }
+  #gibsons-bakery-content {
+    height: 368px;
+  }
+  #eat-my-way-content {
+    height: 339px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -531,5 +540,11 @@ border-radius: 0.6rem;
   }
   .carousels {
     height: 138px;
+  }
+  #gibsons-bakery-content {
+    height: 336px;
+  }
+  #eat-my-way-content {
+    height: 309px;
   }
 }
